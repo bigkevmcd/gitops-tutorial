@@ -1,0 +1,10 @@
+environments:
+  - name: development
+    apps:
+      - name: user-api
+        services:
+          - http-endpoint
+          - dev-redis
+    services:
+      - name: http-endpoint
+      - name: dev-redis
